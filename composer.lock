@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ac133450289caf97755f451472319914",
+    "content-hash": "f53cdc16472c78fd78713ba8b7d6c69a",
     "packages": [
         {
             "name": "darkaonline/l5-swagger",
@@ -513,6 +513,123 @@
             "time": "2019-09-03T16:45:42+00:00"
         },
         {
+            "name": "infyomlabs/adminlte-templates",
+            "version": "6.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/InfyOmLabs/adminlte-templates.git",
+                "reference": "8a9273b7f65a1b0757df8fbe9e25480a409cae11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/InfyOmLabs/adminlte-templates/zipball/8a9273b7f65a1b0757df8fbe9e25480a409cae11",
+                "reference": "8a9273b7f65a1b0757df8fbe9e25480a409cae11",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^6.0.0",
+                "php": ">=7.2"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "\\InfyOm\\AdminLTETemplates\\AdminLTETemplatesServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "InfyOm\\AdminLTETemplates\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mitul Golakiya",
+                    "email": "me@mitul.me"
+                }
+            ],
+            "description": "AdminLTE templates for InfyOm Laravel Generator",
+            "keywords": [
+                "AdminLTE",
+                "bootstrap",
+                "generator",
+                "infyom",
+                "laravel",
+                "templates"
+            ],
+            "time": "2019-09-05T13:04:48+00:00"
+        },
+        {
+            "name": "infyomlabs/laravel-generator",
+            "version": "6.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/InfyOmLabs/laravel-generator.git",
+                "reference": "69c2eb1c3ddc9d0c981a51ad6d970da63d2d85d5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/InfyOmLabs/laravel-generator/zipball/69c2eb1c3ddc9d0c981a51ad6d970da63d2d85d5",
+                "reference": "69c2eb1c3ddc9d0c981a51ad6d970da63d2d85d5",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^6.0.0",
+                "laracasts/flash": "~3.0",
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9",
+                "phpunit/phpunit": "~5.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "\\InfyOm\\Generator\\InfyOmGeneratorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "InfyOm\\Generator\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mitul Golakiya",
+                    "email": "me@mitul.me"
+                }
+            ],
+            "description": "InfyOm Laravel Generator",
+            "keywords": [
+                "api",
+                "crud",
+                "generator",
+                "laravel",
+                "migration",
+                "model",
+                "repository",
+                "request",
+                "swagger",
+                "test",
+                "view"
+            ],
+            "time": "2019-09-19T11:50:47+00:00"
+        },
+        {
             "name": "jakub-onderka/php-console-color",
             "version": "v0.2",
             "source": {
@@ -599,6 +716,60 @@
             ],
             "description": "Highlight PHP code in terminal",
             "time": "2018-09-29T18:48:56+00:00"
+        },
+        {
+            "name": "laracasts/flash",
+            "version": "3.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laracasts/flash.git",
+                "reference": "77fe3a0f0ebf32c66d9c891782e3fa4b305df249"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laracasts/flash/zipball/77fe3a0f0ebf32c66d9c891782e3fa4b305df249",
+                "reference": "77fe3a0f0ebf32c66d9c891782e3fa4b305df249",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.0|^6.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "dev-master",
+                "phpunit/phpunit": "^6.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Laracasts\\Flash\\FlashServiceProvider"
+                    ],
+                    "aliases": {
+                        "Flash": "Laracasts\\Flash\\Flash"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Laracasts\\Flash": "src/"
+                },
+                "files": [
+                    "src/Laracasts/Flash/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jeffrey Way",
+                    "email": "jeffrey@laracasts.com"
+                }
+            ],
+            "description": "Easy flash notifications",
+            "time": "2019-09-03T18:59:42+00:00"
         },
         {
             "name": "laravel/framework",
@@ -807,6 +978,74 @@
                 "psysh"
             ],
             "time": "2019-08-07T15:10:45+00:00"
+        },
+        {
+            "name": "laravelcollective/html",
+            "version": "v6.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LaravelCollective/html.git",
+                "reference": "2f181aba73390eec13d398bf57877b1cc3bc2588"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LaravelCollective/html/zipball/2f181aba73390eec13d398bf57877b1cc3bc2588",
+                "reference": "2f181aba73390eec13d398bf57877b1cc3bc2588",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/http": "6.0.*",
+                "illuminate/routing": "6.0.*",
+                "illuminate/session": "6.0.*",
+                "illuminate/support": "6.0.*",
+                "illuminate/view": "6.0.*",
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "illuminate/database": "6.0.*",
+                "mockery/mockery": "~1.0",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "6.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Collective\\Html\\HtmlServiceProvider"
+                    ],
+                    "aliases": {
+                        "Form": "Collective\\Html\\FormFacade",
+                        "Html": "Collective\\Html\\HtmlFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Collective\\Html\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adam Engebretson",
+                    "email": "adam@laravelcollective.com"
+                },
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                }
+            ],
+            "description": "HTML and Form Builders for the Laravel Framework",
+            "homepage": "https://laravelcollective.com",
+            "time": "2019-09-23T06:16:50+00:00"
         },
         {
             "name": "league/flysystem",
@@ -5187,7 +5426,10 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "infyomlabs/laravel-generator": 20,
+        "infyomlabs/adminlte-templates": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

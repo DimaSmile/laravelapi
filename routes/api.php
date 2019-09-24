@@ -17,6 +17,25 @@ use Illuminate\Http\Request;
 //     return $request->user();
 // });
 
+//we can set subdomain hear or in middleware
+// Route::domain('api.localhost')->group(function () {
+//     Route::get('/user', function(){
+//         $person = [
+//             'first_name' => 'John',
+//             'last_name' => 'Doe',
+//         ];
+    
+//         return $person;
+//     });
+// });
+Route::get('/user', function(){
+    $person = [
+        'first_name' => 'John',
+        'last_name' => 'Doe',
+    ];
+
+    return $person;
+});
 Route::prefix('/freelancers')->group(function() {
     Route::get('/', ['uses' => 'FreelancerController@get']);
     Route::get('/{freelancer_name}', ['uses' => 'FreelancerController@detail']);
@@ -50,3 +69,6 @@ Route::prefix('/applications')->group(function() {
 });
 
 Route::resource('examples', 'Api\ExamplesController');
+
+
+// Route::resource('users', 'UserAPIController');
